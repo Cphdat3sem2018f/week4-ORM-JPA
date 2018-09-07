@@ -14,7 +14,9 @@ EntityManager.
 
 [Java Persistence](https://en.wikibooks.org/wiki/Java_Persistence) (Wikibook). This should be your main reference for most of you JPA-related questions. 
 
-**Important when you read the Wiki** In most of the "technical" sections, you will find two examples. One, who specifies the mapping with annotations and another (the old way) who does it via XML-mappings *We will ONLY use annotation based mappings, so you can ALWAYS skip the XML-parts*. Read the following for day-1
+**Important when you read the Wiki** In most of the "technical" sections, you will find two examples. One, who specifies the mapping with annotations and another (the old way) who does it via XML-mappings *We will ONLY use annotation based mappings, so you can ALWAYS skip the XML-parts*. Don't be scared about "all" the links in the following. They are all just small sections in the same (wiki) book.
+
+Read the following for day-1
 * 3.3 [What is JPA](https://en.wikibooks.org/wiki/Java_Persistence/What_is_JPA%3F)
 * 3.7 [Why use JPA or ORM?](https://en.wikibooks.org/wiki/Java_Persistence/Why_use_JPA_or_ORM%3F)
 * 4.0 [Java Persistence/Persistence Products](https://en.wikibooks.org/wiki/Java_Persistence/Persistence_Products) Skim only (we will be using EclipseLink)
@@ -24,6 +26,20 @@ EntityManager.
 
 ### [Day 2](Day2) - Relationships 
 Relationships, cardinality, directionality and Inheritance (only red students)
+
+### Readings
+From this [chapter](https://en.wikibooks.org/wiki/Java_Persistence/Relationships#JPA_Relationship_Types) in the wikibook you should read:
+
+[Relationships](https://en.wikibooks.org/wiki/Java_Persistence/Relationships#JPA_Relationship_Types). Make sure to follow and skim these links in this section :
+* [OneToOne](https://en.wikibooks.org/wiki/Java_Persistence/OneToOne)
+* [ManyToOne](https://en.wikibooks.org/wiki/Java_Persistence/ManyToOne)
+* [OneToMany](https://en.wikibooks.org/wiki/Java_Persistence/OneToMany)
+* [ManyToMany](https://en.wikibooks.org/wiki/Java_Persistence/ManyToMany)
+* [Java Persistence/Inheritance](https://en.wikibooks.org/wiki/Java_Persistence/Inheritance) ONLY RED STUDENTS
+
+
+
+
 
 ### [Day 3](Day3) - Inheritance and JPQL
 JPQL-queries 
