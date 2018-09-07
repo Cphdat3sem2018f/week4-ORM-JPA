@@ -4,7 +4,7 @@
 Be able to work with databases through an Object Relational Mapping Framework. The focus is on
 java/JPA, but the core concepts are widely applicable in almost all technologies "out there".
 
-### [Day 1](Day1) Introduction to ORM 
+### Day 1 (Tuesday) Introduction to ORM 
 What/why is an ORM, install eclipselink+mysql dependencies, generate tables,
 generate classes (reverse JPA), the persistence unit, the Entity class, the
 EntityManager.
@@ -24,7 +24,11 @@ Read the following for day-1
 * 5.1, 5.2, 5.4, 5.6](https://en.wikibooks.org/wiki/Java_Persistence) Skim these sections, so you know where to come back, when you start with the exercises
 * 6.2  [Persisting (Inserting, Updating, Merging](https://en.wikibooks.org/wiki/Java_Persistence) Read 1.1 -1.4 (skip the Advanced Section)
 
-### [Day 2](Day2) - Relationships 
+
+### Exercises
+TBD
+
+### Day 2 (Wednesday) - Relationships 
 Relationships, cardinality, directionality and Inheritance (only red students)
 
 ### Readings
@@ -37,7 +41,11 @@ From this [chapter](https://en.wikibooks.org/wiki/Java_Persistence/Relationships
 * [ManyToMany](https://en.wikibooks.org/wiki/Java_Persistence/ManyToMany)
 * [Java Persistence/Inheritance](https://en.wikibooks.org/wiki/Java_Persistence/Inheritance) ONLY RED STUDENTS
 
-### [Day 3](Day3) - Quering with JPQL
+
+### Exercises
+TBD
+
+### Day 3 (Thuersday) - Quering with JPQL
 JPQL-queries 
 Read in this [section](https://en.wikibooks.org/wiki/Java_Persistence/Querying) of the wikibook 
 * 1.1 (skip 1.1.2)
@@ -47,6 +55,11 @@ Read in this [section](https://en.wikibooks.org/wiki/Java_Persistence/Querying) 
 * 1.6 [Common Queries](https://en.wikibooks.org/wiki/Java_Persistence/Querying#Common_Queries) Skim all sections to see what you can do. You will need this for the exercises.
 * for your reference [JPQL](https://en.wikibooks.org/wiki/Java_Persistence/JPQL) This is an extra ?? section in the wiki, which is kind of a complete referende to JPQL
 
+### Exercises
+TBD
 
+### Day 4 (Friday) - Friday Exercises
+
+TBD
 
 
