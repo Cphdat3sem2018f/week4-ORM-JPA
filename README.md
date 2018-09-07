@@ -37,9 +37,16 @@ From this [chapter](https://en.wikibooks.org/wiki/Java_Persistence/Relationships
 * [ManyToMany](https://en.wikibooks.org/wiki/Java_Persistence/ManyToMany)
 * [Java Persistence/Inheritance](https://en.wikibooks.org/wiki/Java_Persistence/Inheritance) ONLY RED STUDENTS
 
-
-
-
-
-### [Day 3](Day3) - Inheritance and JPQL
+### [Day 3](Day3) - Quering with JPQL
 JPQL-queries 
+Read in this [section](https://en.wikibooks.org/wiki/Java_Persistence/Querying) of the wikibook 
+* 1.1 (skip 1.1.2)
+* 1.2.1
+* 1.4 [parameters](https://en.wikibooks.org/wiki/Java_Persistence/Querying#Parameters)
+* 1.5 [Query Results](https://en.wikibooks.org/wiki/Java_Persistence/Querying#Query_Results)
+* 1.6 [Common Queries](https://en.wikibooks.org/wiki/Java_Persistence/Querying#Common_Queries) Skim all sections to see what you can do. You will need this for the exercises.
+* for your reference [JPQL](https://en.wikibooks.org/wiki/Java_Persistence/JPQL) This is an extra ?? section in the wiki, which is kind of a complete referende to JPQL
+
+
+
+
