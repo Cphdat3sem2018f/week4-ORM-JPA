@@ -37,14 +37,6 @@ From this [chapter](https://en.wikibooks.org/wiki/Java_Persistence/Relationships
 * [ManyToMany](https://en.wikibooks.org/wiki/Java_Persistence/ManyToMany)
 * [Java Persistence/Inheritance](https://en.wikibooks.org/wiki/Java_Persistence/Inheritance) ONLY RED STUDENTS
 
-### Extra
-The following tutorial from netbeans, as well as a couple videos Christian made, may help you through the JPA setup process if you forget it after the lecture. These are not useful learning resources. I recommend only using them if you forget how to setup the persistence unit, and do table/class generation with JPA.
-
-[netbeans persistence unit tutorial](http://wiki.netbeans.org/SimpleJPAApplicationWithNetbeans#Create_Persistence_Unit)
-Video JPA setup
-Video JPA database table -> entityclass
-Video JPA relationships
-
 ### Day 3 (Thuersday) - Quering with JPQL
 JPQL-queries 
 Read in this [section](https://en.wikibooks.org/wiki/Java_Persistence/Querying) of the wikibook 
@@ -58,6 +50,15 @@ Read in this [section](https://en.wikibooks.org/wiki/Java_Persistence/Querying) 
 ### Day 4 (Friday) - Friday Exercises
 
 [Friday](https://docs.google.com/document/d/10KNPpCFg0Fo7_R40RZwG7spq4g_idzjJYZNtuunilNY/edit?usp=sharing)
+
+### Extra Material for this week
+
+The following tutorial from netbeans, as well as a couple videos Christian made, may help you through the JPA setup process if you forget it after the lecture. These are not useful learning resources. I recommend only using them if you forget how to setup the persistence unit, and do table/class generation with JPA.
+
+- [netbeans persistence unit tutorial](http://wiki.netbeans.org/SimpleJPAApplicationWithNetbeans#Create_Persistence_Unit)
+- [Video JPA setup](https://www.twitch.tv/videos/168683174)
+- [Video JPA database table -> entityclass](https://www.twitch.tv/videos/168934609)
+- [Video JPA relationships](https://www.twitch.tv/videos/168939780)
 
 ## Exercises
 - [Day-1](https://docs.google.com/document/d/1-fWe3QOGluvS38f3iIPcZZbTxL-AfcynG6Hfpv4bc90/edit?usp=sharing)
