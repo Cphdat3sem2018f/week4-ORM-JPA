@@ -37,6 +37,14 @@ From this [chapter](https://en.wikibooks.org/wiki/Java_Persistence/Relationships
 * [ManyToMany](https://en.wikibooks.org/wiki/Java_Persistence/ManyToMany)
 * [Java Persistence/Inheritance](https://en.wikibooks.org/wiki/Java_Persistence/Inheritance) ONLY RED STUDENTS
 
+### Extra
+The following tutorial from netbeans, as well as a couple videos Christian made, may help you through the JPA setup process if you forget it after the lecture. These are not useful learning resources. I recommend only using them if you forget how to setup the persistence unit, and do table/class generation with JPA.
+
+[netbeans persistence unit tutorial](http://wiki.netbeans.org/SimpleJPAApplicationWithNetbeans#Create_Persistence_Unit)
+Video JPA setup
+Video JPA database table -> entityclass
+Video JPA relationships
+
 ### Day 3 (Thuersday) - Quering with JPQL
 JPQL-queries 
 Read in this [section](https://en.wikibooks.org/wiki/Java_Persistence/Querying) of the wikibook 
