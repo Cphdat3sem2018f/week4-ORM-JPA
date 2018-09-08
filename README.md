@@ -53,7 +53,7 @@ Read in this [section](https://en.wikibooks.org/wiki/Java_Persistence/Querying) 
 
 ## Exercises
 - [Day-1](https://docs.google.com/document/d/1-fWe3QOGluvS38f3iIPcZZbTxL-AfcynG6Hfpv4bc90/edit?usp=sharing)
-- [Day-2](https://docs.google.com/document/d/1JuoyPUqw45jKta9_pY21Go7lgR8ur-XVWBiZOxUpXPo/edit?usp=sharing),  [Day-2 RED ONLY](https://docs.google.com/document/d/1u8Tr4R_5otLGQlr1KakSI3lwB2IYdUH7ZxpQvERiGY8/edit?usp=sharing)
+- [Day-2](https://docs.google.com/document/d/1JuoyPUqw45jKta9_pY21Go7lgR8ur-XVWBiZOxUpXPo/edit?usp=sharing), ( [Day-2 RED ONLY](https://docs.google.com/document/d/1u8Tr4R_5otLGQlr1KakSI3lwB2IYdUH7ZxpQvERiGY8/edit?usp=sharing) )
 - [Day-3](https://docs.google.com/document/d/1xY_bK3BvgFoE0A93M_7RFLeB0Pze1WRanqqBdDIZxoU/edit?usp=sharing)
 - [Friday](https://docs.google.com/document/d/10KNPpCFg0Fo7_R40RZwG7spq4g_idzjJYZNtuunilNY/edit?usp=sharing)
 
