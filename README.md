@@ -49,7 +49,6 @@ Read in this [section](https://en.wikibooks.org/wiki/Java_Persistence/Querying) 
 
 ### Day 4 (Friday) - Friday Exercises
 
-TBD
 
 
 ## Exercises
