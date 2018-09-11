@@ -54,7 +54,7 @@ Read in this [section](https://en.wikibooks.org/wiki/Java_Persistence/Querying) 
 ### Extra Material for this week
 
 The following tutorial from netbeans, as well as a couple videos Christian made, may help you through the JPA setup process if you forget it after the lecture. These are not useful learning resources. I recommend only using them if you forget how to setup the persistence unit, and do table/class generation with JPA.
-
+- [List of ALL JPA-annotations](https://www.objectdb.com/api/java/jpa/annotations)
 - [netbeans persistence unit tutorial](http://wiki.netbeans.org/SimpleJPAApplicationWithNetbeans#Create_Persistence_Unit)
 - [Video JPA setup](https://www.twitch.tv/videos/168683174)
 - [Video JPA database table -> entityclass](https://www.twitch.tv/videos/168934609)
