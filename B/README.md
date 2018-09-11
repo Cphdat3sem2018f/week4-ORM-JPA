@@ -1,7 +1,6 @@
 # ORM
 
-## Learning objectives
+[ORM_LearningObjectives&Plan](ORM_LearningObjectives&Plan.pdf)
+[ORM_Notes](ORM_Notes.pdf)
 
-## Plan
-
-## Subjects
+JPA Project
