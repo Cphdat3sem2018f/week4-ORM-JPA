@@ -1,6 +1,6 @@
 # ORM
 
-[ORM_LearningObjectives&Plan](ORM_LearningObjectives&Plan.pdf)
-[ORM_Notes](ORM_Notes.pdf)
+[ORM_LearningObjectives&Plan](ORM_LearningObjectives&Plan.pdf) 
+[ORM_Notes](ORM_Notes.pdf) 
 
-JPA Project
+[JPA Project](JPA Project)
