@@ -3,6 +3,10 @@
   <persistence-unit name="jpapu" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>entity.Person</class>
+    <class>entity.Address</class>
+    <class>entity.BallPlayer</class>
+    <class>reversejpa.Productlines</class>
+    <class>reversejpa.Offices</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpadb?"/>
       <property name="javax.persistence.jdbc.user" value="root"/>

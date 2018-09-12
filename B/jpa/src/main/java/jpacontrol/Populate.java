@@ -1,5 +1,7 @@
 package jpacontrol;
 
+import entity.Address;
+import entity.BallPlayer;
 import entity.Person;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -14,8 +16,24 @@ public class Populate
         
         em.getTransaction().begin();
         
+        /*
         Person p = new Person("Dan", "Larsson", 56);
-        em.persist(p);
+
+        Address a = new Address("SomeRoad 345", "Copenhagen");
+        
+        //em.persist(a);
+        //em.persist(p);
+        
+        //em.remove(p);
+
+        p.addAddress(a);
+        a.addPerson(p);
+        */
+        
+        BallPlayer bp = new BallPlayer("RealMadrid", 7, "Cristiano", "Ronaldo", 99);
+
+        em.persist(bp);
+
         
         em.getTransaction().commit();
         em.close();

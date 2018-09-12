@@ -1,18 +1,26 @@
 package entity;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
 @Table(name="tbl_person")
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Person implements Serializable
 {
     private static final long serialVersionUID = 1L;
@@ -31,6 +39,10 @@ public class Person implements Serializable
     @Temporal(TemporalType.TIMESTAMP)
     private Date expirationDate;
 
+    
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<Address> addresses = new ArrayList();
+    
     public Person()
     {
     }
@@ -103,8 +115,21 @@ public class Person implements Serializable
     {
         this.expirationDate = expirationDate;
     }
+
+    public List<Address> getAddresses()
+    {
+        return addresses;
+    }
+
+    public void setAddresses(List<Address> addresses)
+    {
+        this.addresses = addresses;
+    }
     
-    
+    public void addAddress(Address address)
+    {
+        this.addresses.add(address);
+    }
 
     @Override
     public int hashCode()
@@ -135,5 +160,4 @@ public class Person implements Serializable
     {
         return "Person{" + "id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + '}';
     }
-    
 }
