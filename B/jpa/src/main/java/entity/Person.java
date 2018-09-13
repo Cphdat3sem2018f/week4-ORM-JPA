@@ -12,50 +12,53 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(name="tbl_person")
 @Inheritance(strategy = InheritanceType.JOINED)
+//@Table(name="tbl_person")
+@NamedQuery(name = "findAllPersons", query = "SELECT p FROM Person p")
+@NamedQueries(
+{
+@NamedQuery(name = "findAllPersonsByFirstName", query="Select p from Person p where p.firstName = :firstName"),
+@NamedQuery(name = "findAllPersonsByPhoneNumber", query = "SELECT p FROM Person p WHERE p.phoneNumber = :phoneNumber")
+})
+
 public class Person implements Serializable
 {
     private static final long serialVersionUID = 1L;
     @Id
-    @Column(name="PERSON_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String firstName;
     private String lastName;
-    
-    private int age;
-    
+    private int phoneNumber;
+    @Column(columnDefinition = "TINYINT")
+    private boolean member;
+
     @Temporal(TemporalType.DATE)
     private Date creationDate;
     @Temporal(TemporalType.TIMESTAMP)
     private Date expirationDate;
-
-    
-    @ManyToMany(cascade = CascadeType.ALL)
-    private List<Address> addresses = new ArrayList();
+    @Temporal(TemporalType.TIME)
+    private Date startTime;
     
     public Person()
     {
     }
 
-    public Person(String firstName, String lastName, int age)
+    public Person(String firstName, String lastName, int phoneNumber)
     {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.age = age;
+        this.phoneNumber = phoneNumber;
     }
-    
-    
-    
+
     public Long getId()
     {
         return id;
@@ -86,14 +89,24 @@ public class Person implements Serializable
         this.lastName = lastName;
     }
 
-    public int getAge()
+    public int getPhoneNumber()
     {
-        return age;
+        return phoneNumber;
     }
 
-    public void setAge(int age)
+    public void setPhoneNumber(int phoneNumber)
     {
-        this.age = age;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public boolean isMember()
+    {
+        return member;
+    }
+
+    public void setMember(boolean member)
+    {
+        this.member = member;
     }
 
     public Date getCreationDate()
@@ -116,19 +129,65 @@ public class Person implements Serializable
         this.expirationDate = expirationDate;
     }
 
-    public List<Address> getAddresses()
+    public Date getStartTime()
     {
-        return addresses;
+        return startTime;
     }
 
-    public void setAddresses(List<Address> addresses)
+    public void setStartTime(Date startTime)
     {
-        this.addresses = addresses;
+        this.startTime = startTime;
     }
     
-    public void addAddress(Address address)
+    //OneToOneUni
+    /*
+    @OneToOne
+    private Address address;
+    */
+    
+    //OneToOneBi
+    /*
+    @OneToOne
+    private Address address;
+    */
+
+    //OneToOne
+    /*
+    public Address getAddress()
     {
-        this.addresses.add(address);
+        return address;
+    }
+    public void setAddress(Address address)
+    {
+        this.address = address;
+    }
+    */
+    
+    //OneToManyUni
+    /*
+    @OneToMany(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "Person_ID")
+    private List<Address> addresses = new ArrayList();
+    */
+    
+    //OneToManyBi
+    @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Address> addresses = new ArrayList();
+    
+    //ManyToMany
+    /*
+    @ManyToMany(cascade = CascadeType.PERSIST)
+    private List<Address> addresses = new ArrayList();
+    */
+    
+    public void addAddress(Address a)
+    {
+        addresses.add(a);
+    }
+    
+    public String getAddresses()
+    {
+        return addresses.toString().replace("[", "").replace("]", "").replace(", ", ",");
     }
 
     @Override
@@ -158,6 +217,6 @@ public class Person implements Serializable
     @Override
     public String toString()
     {
-        return "Person{" + "id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + '}';
+        return "Person{" + "id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", phoneNumber=" + phoneNumber + '}';
     }
 }

@@ -1,2 +1,2 @@
-drop database jpadb;
-create database jpadb;
+DROP DATABASE jpadb;
+CREATE DATABASE jpadb;
